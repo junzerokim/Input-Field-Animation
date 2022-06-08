@@ -1,0 +1,39 @@
+* {
+  background-color: black;
+  color: white;
+  top: 350px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  position: relative;
+  width: 200px;
+  height: 25px;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+
+#name {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  color: #fff;
+  background-color: transparent;
+  outline: 2px solid #fff;
+}
+
+.input-group:focus-within label {
+  transform: translate(0, -30px) scale(0.8);
+}
